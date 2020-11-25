@@ -197,7 +197,7 @@ class HttpTransport extends AbstractTransport
             sprintf("Host: %s:%d", $this->host, $this->port),
             sprintf("Content-Length: %d", strlen($rawMessage)),
             "Content-Type: application/json",
-            "Connection: Keep-Alive",
+            "Connection: Close",
             "Accept: */*"
         );
 

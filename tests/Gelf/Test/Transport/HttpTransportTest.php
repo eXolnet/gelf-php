@@ -222,7 +222,7 @@ class HttpTransportTest extends TestCase
                  . "Host: 127.0.0.1:12202"."\r\n"
                  . "Content-Length: 300"."\r\n"
                  . "Content-Type: application/json"."\r\n"
-                 . "Connection: Keep-Alive"."\r\n"
+                 . "Connection: Close"."\r\n"
                  . "Accept: */*"."\r\n"
                  . ""."\r\n"
                  . $this->testMessage;
@@ -284,7 +284,7 @@ class HttpTransportTest extends TestCase
                  . "Host: 127.0.0.1:12202"."\r\n"
                  . "Content-Length: 300"."\r\n"
                  . "Content-Type: application/json"."\r\n"
-                 . "Connection: Keep-Alive"."\r\n"
+                 . "Connection: Close"."\r\n"
                  . "Accept: */*"."\r\n"
                  . "Content-Encoding: gzip"."\r\n"
                  . ""."\r\n"
